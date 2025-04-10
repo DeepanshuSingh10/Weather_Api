@@ -1,0 +1,59 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(17, 18, 18)	;
+    /* background: linear-gradient(#FF355E,#FF6037,#FFFF66,#66FF66,#EE34D2); */
+    background: linear-gradient(#FD8112, #0085CA);
+    border: 10px solid nprgb(10, 13, 12);
+    color: white;
+ }
+ .box h1{
+    /* animation: rotate 1s linear ; */
+ }
+ .box input{
+    height: 38px;
+    width: 180px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    outline: none;
+
+ }
+ .btn{
+     background-color: rgb(49, 49, 240);
+     color: white;
+     height: 40px;
+     width: 90px;
+     border-top-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+     border: none;
+ }
+ .foot{
+    margin-top: 20px;
+    /* border-bottom:2px solid black ; */
+    /* border-top:2px solid black ; */
+    font-family: Monospace;
+    font-size: 30px;
+    /* font-weight: bold; */
+    padding-bottom: 20px;
+    /* animation: rotate 1s linear ; */
+    animation: loop 8s linear infinite;
+ }
+ @keyframes rotate {
+    from {
+      transform: rotate(-5deg);
+    }
+    to {
+      transform: rotate(5deg);
+    }
+  }
+  @keyframes loop {
+    0% {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
